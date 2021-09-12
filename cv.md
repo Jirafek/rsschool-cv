@@ -13,12 +13,12 @@
   > [Write](https://t.me/Serafim_v)
 
 ***
-## About 
+## About me
 
 I am Nikolayeu Serafim. I like to write code. I don't have some experience in company. But i worked with [this](https://hookahskills.ru) project.
 
 ***
-## My skil
+## My skill
 
 I know next _programming languages_ (libraries): **Html, CSS, JavaScript, Jquery, Git**.
 
