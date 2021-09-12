@@ -57,6 +57,10 @@ main {
     position: absolute;
     right: 30px;
 }
+.connect-bar-text {
+    color: #fff;
+    margin-bottom: 20px;
+}
 .connection-bar-list2 {
     display: flex;
     flex-direction: row;
