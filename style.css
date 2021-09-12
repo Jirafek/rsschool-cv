@@ -59,7 +59,8 @@ main {
 }
 .connect-bar-text {
     color: #fff;
-    margin-bottom: 20px;
+    position: absolute;
+    right: 220px;
 }
 .connection-bar-list2 {
     display: flex;
