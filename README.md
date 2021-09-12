@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Jirafek.github.io/rsschool-cv/
