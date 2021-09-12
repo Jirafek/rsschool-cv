@@ -280,4 +280,7 @@ main {
     .profile-photo-item {
         visibility: hidden;
     }
+    .connection-bar-list2 {
+        right: 135px;
+    }
 }
