@@ -132,7 +132,7 @@ main {
 }
 .read-more-link {
     text-decoration: none;
-    color: #222;
+    color: rgb(0, 174, 255);
     font-size: 24px;
     font-weight: 700;
 
@@ -215,6 +215,9 @@ main {
 .photo-code {
     text-align: center;
 }
+.photo-code-img {
+    border-radius: 30px;
+}
 .photo-text-item {
     text-align: center;
     padding-top: 0px;
@@ -283,5 +286,8 @@ main {
     }
     .bar-link-english1 {
         visibility: hidden;
+    }
+    .skill-line {
+        margin-left: 150px;
     }
 }
