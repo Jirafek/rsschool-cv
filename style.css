@@ -276,6 +276,9 @@ main {
     .year-21-text {
         visibility: hidden;
     }
+    .connect-bar-text {
+        visibility: hidden;
+    }
 }
 @media (max-width: 500px) {
     .menu-bar-item {
