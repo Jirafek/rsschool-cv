@@ -265,4 +265,19 @@ main {
     .connection-bar-list {
         visibility: hidden;
     }
+    .year-21-text {
+        visibility: hidden;
+    }
+}
+@media (max-width: 500px) {
+    .menu-bar-item {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .menu-bar-list {
+        padding-right: 20px;
+    }
+    .profile-photo-item {
+        visibility: hidden;
+    }
 }
