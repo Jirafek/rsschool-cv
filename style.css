@@ -273,6 +273,7 @@ main {
     .menu-bar-item {
         margin-left: 0px;
         margin-right: 15px;
+        text-align: center;
     }
     .menu-bar-list {
         padding-right: 20px;
