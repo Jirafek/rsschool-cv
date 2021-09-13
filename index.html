@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
 </head>
 <body>
     <div class="body">
@@ -120,8 +122,27 @@
                                 <h2 class="photo-text-item">Example of my code</h2> <br>
                                 <h6 class="h6-item">Peace of my portfolio</h6>
                             </div>
-                            <div class="photo-code">
-                                <img class="photo-code-img" src="code_example.png" alt="example of my code">
+                            <div class="photo-code"></div>
+                                <pre class="text-photo-code-example"><code class="text-photo-code-example">
+                                    <p class="text-photo-code-example">
+                                &lt;section id="services" class="section-services"&gt; &lt;!--3 section--&gt;
+                                    &lt;div class="wrapper"&gt;
+                                    &lt;h2 class="title_h2 text-center"&gt;My Services&lt;/h2&gt;
+                                        &lt;p class="after_title text-center"&gt;Choose what do you want&lt;/p&gt;
+                                            &lt;div class="service"&gt;
+                                                &lt;div class="service-item"&gt;
+                                                    &lt;h3 class="title-h3"&gt;Web Design&lt;/h3&gt;
+                                                &lt;a class="service_link" href="#"&gt;&lt;span&gt;Read More&lt;/span&gt;&lt;/a&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="service-item"&gt;
+                                                &lt;h3 class="title-h3"&gt;Frontend developing&lt;/h3&gt;
+                                                &lt;a class="service_link" href="#"&gt;&lt;span>Read More&lt;/span&gt;&lt;/a&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/section&gt;
+                                </p>
+                                </code></pre>
                             </div>
                         </div>
                     </div>
@@ -185,5 +206,6 @@
             </footer>
     </div>
     <script src="script.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
