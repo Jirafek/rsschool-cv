@@ -57,6 +57,10 @@ main {
     position: absolute;
     right: 30px;
 }
+.connect-bar-text {
+    color: #fff;
+    margin-bottom: 20px;
+}
 .connection-bar-list2 {
     display: flex;
     flex-direction: row;
@@ -132,7 +136,7 @@ main {
 }
 .read-more-link {
     text-decoration: none;
-    color: #222;
+    color: rgb(0, 174, 255);
     font-size: 24px;
     font-weight: 700;
 
@@ -215,6 +219,9 @@ main {
 .photo-code {
     text-align: center;
 }
+.photo-code-img {
+    border-radius: 30px;
+}
 .photo-text-item {
     text-align: center;
     padding-top: 0px;
@@ -278,10 +285,13 @@ main {
     .menu-bar-list {
         padding-right: 20px;
     }
-    .profile-photo-item {
-        visibility: hidden;
-    }
     .connection-bar-list2 {
         right: 135px;
+    }
+    .bar-link-english1 {
+        visibility: hidden;
+    }
+    .skill-line {
+        margin-left: 150px;
     }
 }
