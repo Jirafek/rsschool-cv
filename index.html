@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
 </head>
 <body>
     <div class="body">
@@ -26,6 +28,7 @@
                                 <li class="menu-bar-item bar-link-about1"><a href="#about" class="menu-bar-link">About</a></li>
                                 <li class="menu-bar-item"><a href="#code" class="menu-bar-link">Code</a></li>
                                 <li class="menu-bar-item bar-link-courses1"><a href="#courses" class="menu-bar-link bar-link-courses">Courses</a></li>
+                                <li class="menu-bar-item bar-link-work"><a href="#work" class="menu-bar-link">Works</a></li>
                                 <li
                                 class="menu-bar-item bar-link-english1"><a href="#english" class="menu-bar-link bar-link-english">English</a></li>
                             </ul>
@@ -120,8 +123,27 @@
                                 <h2 class="photo-text-item">Example of my code</h2> <br>
                                 <h6 class="h6-item">Peace of my portfolio</h6>
                             </div>
-                            <div class="photo-code">
-                                <img class="photo-code-img" src="code_example.png" alt="example of my code">
+                            <div class="photo-code"></div>
+                                <pre class="text-photo-code-example"><code class="text-photo-code-example">
+                                    <p class="text-photo-code-example">
+                                &lt;section id="services" class="section-services"&gt; &lt;!--3 section--&gt;
+                                    &lt;div class="wrapper"&gt;
+                                    &lt;h2 class="title_h2 text-center"&gt;My Services&lt;/h2&gt;
+                                        &lt;p class="after_title text-center"&gt;Choose what do you want&lt;/p&gt;
+                                            &lt;div class="service"&gt;
+                                                &lt;div class="service-item"&gt;
+                                                    &lt;h3 class="title-h3"&gt;Web Design&lt;/h3&gt;
+                                                &lt;a class="service_link" href="#"&gt;&lt;span&gt;Read More&lt;/span&gt;&lt;/a&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="service-item"&gt;
+                                                &lt;h3 class="title-h3"&gt;Frontend developing&lt;/h3&gt;
+                                                &lt;a class="service_link" href="#"&gt;&lt;span>Read More&lt;/span&gt;&lt;/a&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/section&gt;
+                                </p>
+                                </code></pre>
                             </div>
                         </div>
                     </div>
@@ -144,6 +166,20 @@
                         </div>
                     </div>
                 </section>
+                <section id="work" class="works">
+                    <div class="wrapper">
+                        <div class="center-text-work"><h2 class="center-text-work-h1">My Works</h2></div>
+                        <div class="work-img">
+                            <div class="work-img-item">
+                                <a href="https://hookahskills.ru" target="blanc"><img src="hookskl.png" alt=""></a>
+                                <div class="work-img-item-text-div">
+                                    <p class="work-img-item-text">I worked on a <br>website for buying <br>hookah accessories</p>
+                                    <p class="work-img-item-text">Used: JavaScript, <br>HTML, CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="english" id="english">
                     <div class="wrapper">
                         <div class="en-text">
@@ -161,15 +197,16 @@
                     <div class="wrapper">
                         <div class="less-line">
                             <div class="rsschool-logo">
-                                <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo RSschool" height="30" width="80"></a>
+                                <a href="https://rs.school/js/"><img class="rs-logo" src="https://rs.school/images/rs_school_js.svg" alt="logo RSschool" height="30" width="80"></a>
                             </div>
                             <div class="year-21">
                                 <p class="year-21-text"><i class="zmdi zmdi-shield-check"></i>All rights reserved</p>
                             </div>
+                            <p class="connect-bar-text">2021 ©</p>
                             <div class="footer-list">
+                                
                                 <nav>
                                     <ul class="connection-bar-list2">
-                                        <p class="connect-bar-text">2021</p>
                                         <li class="connection-bar-item"><a href="https://t.me/Serafim_v" title="Telegram" class="connection-bar-link"><i class="zmdi zmdi-mail-send"></i></a></li>
                                         <li class="connection-bar-item"><a href="mailto:jirafek12@gmail.com" title="Email" class="connection-bar-link"><i class="zmdi zmdi-email"></i></a></li>
                                     </ul>
@@ -184,5 +221,6 @@
             </footer>
     </div>
     <script src="script.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
