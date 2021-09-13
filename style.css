@@ -264,6 +264,10 @@ main {
 .english {
     background-color: rgb(219, 219, 219);
 }
+.en-text {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
 .en-text-item {
     text-align: center;
 }
