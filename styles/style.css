@@ -56,11 +56,6 @@ main {
     position: absolute;
     right: 30px;
 }
-.connect-bar-text {
-    color: #fff;
-    position: absolute;
-    right: 220px;
-}
 .connection-bar-list2 {
     display: flex;
     flex-direction: row;
@@ -131,6 +126,14 @@ main {
 .bar-line-git::after {
     width: 68px;
 }
+
+.profil-photo-item {
+    transition: 0.7s;
+}
+.profil-photo-item:hover {
+    border-radius: 30px;
+}
+
 .read-more {
     margin-left: 130px;
 }
@@ -139,26 +142,35 @@ main {
     color: rgb(0, 174, 255);
     font-size: 24px;
     font-weight: 700;
-
     transition: 0.5s;
 }
+@keyframes BackTime {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@-webkit-keyframes BackTime {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+
 .read-more-link:hover {
     color: rgb(143, 143, 143);
 }
 .html-a {
-    animation: Timeout 0.5s;
+    animation: Timeout 0.8s;
 }
 .JS-a {
-    animation: Timeout 1s;
+    animation: Timeout 1.3s;
 }
 .css-a {
-    animation: Timeout 1.5s;
+    animation: Timeout 1.8s;
 }
 .git-a {
-    animation: Timeout 2s;
+    animation: Timeout 2.3s;
 }
 .JQ-a {
-    animation: Timeout 2.5s;
+    animation: Timeout 2.8s;
 }
 
 @keyframes Timeout {
@@ -246,9 +258,6 @@ main {
     text-align: center;
     padding-top: 15px;
 }
-.courses {
-    background: rgb(219, 219, 219);
-}
 .course-list-item {
     margin-bottom: 8px;
 }
@@ -259,9 +268,6 @@ main {
 }
 .course-list-ul {
     padding-bottom: 15px;
-}
-.english {
-    background-color: rgb(219, 219, 219);
 }
 .en-text {
     padding-top: 5px;
@@ -285,14 +291,52 @@ main {
     font-weight: 700;
 }
 
+.contact-here {
+    background-color: rgb(0, 174, 255);
+}
+.inp1, .inp2, .inp3, .inp4 {
+    width: 250px;
+}
+.inp1, .inp2, .inp3, .inp4, input {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.inp1, .inp2 {
+    height: 40px;
+}
+.inp_all {
+    text-align: center;
+}
+.contact-here-write-block {
+    display: flex;
+    flex-direction: column;
+}
+.contact-here-block {
+    padding: 70px 0 70px 0;
+}
+.contact-here-center {
+    text-align: center;
+    padding-top: 15px;
+}
+input[type="submit"] {
+    margin-top: 30px;
+    background: rgb(16, 154, 218);
+    border-bottom: 4px solid rgb(0, 121, 177);
+    color: white;
+    font-size: 14px;
+}
+
 @media (max-width: 880px) {
     .connection-bar-list {
         visibility: hidden;
     }
     .year-21-text {
-        visibility: hidden;
-    }
-    .connect-bar-text {
         visibility: hidden;
     }
 }
