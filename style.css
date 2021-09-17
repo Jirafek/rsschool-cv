@@ -358,6 +358,9 @@ input[type="submit"] {
     .bar-link-work {
         visibility: hidden;
     }
+    .bar-link-cnt-hr {
+        visibility: hidden;
+    }
     .skill-line {
         margin-left: 150px;
     }
