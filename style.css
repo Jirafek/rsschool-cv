@@ -251,17 +251,6 @@ main {
 .work-img-item {
     text-align: center;
 }
-.visit-btn {
-    position: absolute;
-    margin-top: 115px;
-    right: 200px;
-    font-size: 30px;
-    background-color: rgb(0, 174, 255);
-    width: 90px;
-    height: 50px;
-    border-radius: 30px;
-    border-color: black;
-}
 .work-img-item-text {
     font-weight: 500;
 }
