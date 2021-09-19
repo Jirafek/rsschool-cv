@@ -307,6 +307,10 @@ main {
     border-radius: 20px;
     font-family: 'Roboto', sans-serif;
 }
+.inp1:focus, .inp2:focus, .inp3:focus {
+    transition: 0.5s;
+    box-shadow: inset 0 0 10px;
+}
 .inp1, .inp2 {
     height: 40px;
 }
