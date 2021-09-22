@@ -23,3 +23,5 @@ function bordering() {
   sub_btn.style.borderBottom = '0';
   sub_btn.style.borderTop = '4px solid rgb(0, 121, 177)';
 }
+
+document.querySelectorAll("a[href='#']").forEach(elem => { elem.addEventListener("click", () => elem.preventDefault()); })
