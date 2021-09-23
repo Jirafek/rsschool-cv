@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
 </head>
 <body>
+    <div class="wrap">
     <div class="body">
         <header class="head">
             <div class="header">
@@ -22,30 +23,28 @@
                         <div class="profile-photo">
                             <a href="#" class="profile-photo-link"><img class="profile-photo-item" alt="My profil photo" src="photo.jpg"></a>
                         </div>
-                        <div class="menu-bar">
+                        <div class="havburger-menu">
+                            <input id="menu_toggle" type="checkbox">
+                            <label class="menu_btn" for="menu_toggle">
+                                <span></span>
+                            </label>
                             <ul class="menu-bar-list">
-                                <li class="menu-bar-item bar-link-courses1"><a href="#home" class="menu-bar-link">Home</a></li>
-                                <li class="menu-bar-item bar-link-about1"><a href="#about" class="menu-bar-link">About</a></li>
+                                <li class="menu-bar-item"><a href="#home" class="menu-bar-link">Home</a></li>
+                                <li class="menu-bar-item"><a href="#about" class="menu-bar-link">About</a></li>
                                 <li class="menu-bar-item"><a href="#code" class="menu-bar-link">Code</a></li>
-                                <li class="menu-bar-item bar-link-courses1"><a href="#courses" class="menu-bar-link bar-link-courses">Courses</a></li>
-                                <li class="menu-bar-item bar-link-work"><a href="#work" class="menu-bar-link">Works</a></li>
+                                <li class="menu-bar-item"><a href="#courses" class="menu-bar-link bar-link-courses">Courses</a></li>
+                                <li class="menu-bar-item"><a href="#work" class="menu-bar-link">Works</a></li>
+                                <li class="menu-bar-item"><a href="#connection" class="menu-bar-link">Connection</a></li>
                                 <li
-                                class="menu-bar-item bar-link-english1"><a href="#english" class="menu-bar-link bar-link-english">English</a></li>
+                                class="menu-bar-item"><a href="#english" class="menu-bar-link">English</a></li>
+                                <li class="menu-bar-item "><a href="#cnt-hr" class="menu-bar-link">Contact</a></li>
                             </ul>
-                        </div>
-                        <div class="connection">
-                            <nav>
-                            <ul class="connection-bar-list">
-                                <li class="connection-bar-item"><a href="https://t.me/Serafim_v" title="Telegram" class="connection-bar-link"><i class="zmdi zmdi-mail-send"></i></a></li>
-                                <li class="connection-bar-item"><a href="mailto:jirafek12@gmail.com" title="Email" class="connection-bar-link"><i class="zmdi zmdi-email"></i></a></li>
-                                <li class="connection-bar-item"><a href="https://github.com/Jirafek" title="Github" class="connection-bar-link"><i class="zmdi zmdi-github-alt"></i></a></li>
-                            </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+    </div>
         <!--Main-->
         <main>
             <div class="main">
@@ -56,15 +55,15 @@
                             <hr>
                             <h2 class="home-text2-item">I am Nikolayeu Serafim, and here you can see what i can do: </h2> <br>
                             <ul class="list-can_do">
-                                <li class="can_do">Adaptive sites</li>
-                                <li class="can_do">Use jquery</li>
-                                <li class="can_do">Work with Git</li>
-                                <li class="can_do">Write JavaScript code</li>
+                                <li class="can_do ad-si">Adaptive sites</li>
+                                <li class="can_do us-jq">Use jquery</li>
+                                <li class="can_do wo-gi">Work with Git</li>
+                                <li class="can_do wr-co">Write JavaScript code</li>
                             </ul>
 
-                            <p class="read-more"><a class="read-more-link" href="#" onclick="skill.hidden = false">Read more</a></p>
+                            <p class="read-more"><a class="read-more-link" id="read-more-link-id" href="#dff" onclick="skill.hidden = false">Read more</a></p>
 
-                            <div class="skill-line">
+                            <div class="skill-line" id="skill-line-id">
 
                                 <div class="html-a">
                                 <div class="html-line line-name">
@@ -112,7 +111,7 @@
                 <section class="about" id="about">
                     <div class="photo-items">
                         <h2 class="photo-items-text">About me</h2>
-                        <img src="photo.jpg" alt="My profil photo">
+                        <img class="profil-photo-item" src="photo.jpg" alt="My profil photo">
                         <p class="photo-itm-text">Thank you for visiting my site. As you can know, <strong>I love programming</strong>. I have been learning programming <strong>for 2 years</strong>. I started with <em>swift</em> and now I'm learning <em>frontend</em>. I am confident that I'll can advance my programming skills. I helped guys create <strong><a href="https://hookahskills.ru">this</a></strong> project. It is my all experience. More information below.</p>
                     </div>
                 </section>
@@ -145,6 +144,7 @@
                         </div>
                     </div>
                 </section>
+                <hr>
                 <section class="courses" id="courses">
                     <div class="wrapper">
                         <div class="course">
@@ -163,6 +163,7 @@
                         </div>
                     </div>
                 </section>
+                <hr>
                 <section id="work" class="works">
                     <div class="wrapper">
                         <div class="center-text-work"><h2 class="center-text-work-h1">My Works</h2></div>
@@ -177,12 +178,42 @@
                         </div>
                     </div>
                 </section>
+                <hr>
+                <section class="contacts-for" id="connection">
+                    <div class="wrappier">
+                        <h2 class="contacts-me-for-text">Connection with me</h2>
+                        <div class="footer-list">
+                            <nav>
+                                <ul class="connection-bar-list2">
+                                    <li class="connection-bar-item"><a href="https://t.me/Serafim_v" title="Telegram" class="connection-bar-link"><i class="zmdi zmdi-mail-send"></i>Telegram</a></li>
+                                    <li class="connection-bar-item"><a href="mailto:jirafek12@gmail.com" title="Email" class="connection-bar-link"><i class="zmdi zmdi-email"></i>Email</a></li>
+                                </ul>
+                                </nav>
+                        </div>
+                    </div>
+                </section>
+                <hr>
                 <section class="english" id="english">
                     <div class="wrapper">
                         <div class="en-text">
                             <h2 class="en-text-item">English</h2>
                             <h4 class="en-text-item">Level</h4>
                             <h2 class="en-text-item item-en"><strong>Intermediate</strong></h2>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-here" id="cnt-hr">
+                    <div class="wrapper">
+                        <div class="contact-here-block">
+                            <h2 class="contact-here-center">Contact me</h2>
+                            <div class="contact-here-write-block">
+                                <div class="inp_all">
+                                <input class="inp1" type="email" placeholder="Email"> <br>
+                                <input class="inp2" type="text" placeholder="Name"> <br>
+                                <textarea class="inp3" placeholder="Message..." rows="3"></textarea> <br>
+                                <input class="inp4" type="submit" onclick="window.location.reload(); bordering()">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -197,17 +228,7 @@
                                 <a href="https://rs.school/js/"><img class="rs-logo" src="https://rs.school/images/rs_school_js.svg" alt="logo RSschool" height="30" width="80"></a>
                             </div>
                             <div class="year-21">
-                                <p class="year-21-text"><i class="zmdi zmdi-shield-check"></i>All rights reserved</p>
-                            </div>
-                            <p class="connect-bar-text">2021 ©</p>
-                            <div class="footer-list">
-                                
-                                <nav>
-                                    <ul class="connection-bar-list2">
-                                        <li class="connection-bar-item"><a href="https://t.me/Serafim_v" title="Telegram" class="connection-bar-link"><i class="zmdi zmdi-mail-send"></i></a></li>
-                                        <li class="connection-bar-item"><a href="mailto:jirafek12@gmail.com" title="Email" class="connection-bar-link"><i class="zmdi zmdi-email"></i></a></li>
-                                    </ul>
-                                    </nav>
+                                <p class="rights-text"><i class="zmdi zmdi-shield-check"></i>All rights reserved 2021</p>
                             </div>
                             <div class="my_github">
                                 <a href="https://github.com/Jirafek" class="my_github-tekst">Git</a>
@@ -216,6 +237,7 @@
                     </div>
                 </div>
             </footer>
+            </div>
     <script src="script.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </body>
